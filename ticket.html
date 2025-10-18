@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Билет — Тест</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="container">
+    <div class="mode-selector">
+      <label for="watchdog-mode">Режим "Смотритель":</label>
+      <label class="toggle-switch">
+        <input type="checkbox" id="watchdog-mode">
+        <span class="toggle-slider"></span>
+      </label>
+      <span class="mode-description" id="mode-description">
+        Обычный режим: можно переходить к следующему вопросу даже при неправильном ответе
+      </span>
+    </div>
+    <div class="quiz" id="quiz">
+      <div class="question-header">
+        <a href="index.html" class="btn" aria-label="Назад">← Назад</a>
+        <div class="progress" id="progress">1 / 20</div>
+      </div>
+      <h2 id="question"></h2>
+      <div id="badge" class="badge hidden"></div>
+      <div id="options" class="options"></div>
+      <div id="reveal" class="answer-reveal hidden"></div>
+      <div class="controls">
+        <button id="next" class="btn" type="button">Дальше</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="data.global.js"></script>
+
+  <script src="tickets/ticket01.js"></script>
+  <script src="tickets/ticket02.js"></script>
+  <script src="tickets/ticket03.js"></script>
+  <script src="tickets/ticket04.js"></script>
+  <script src="tickets/ticket05.js"></script>
+  <script src="tickets/ticket06.js"></script>
+  <script src="tickets/ticket07.js"></script>
+  <script src="tickets/ticket08.js"></script>
+  <script src="tickets/ticket09.js"></script>
+  <script src="tickets/ticket10.js"></script>
+  <script src="tickets/ticket11.js"></script>
+  <script src="tickets/ticket12.js"></script>
+  <script src="tickets/ticket13.js"></script>
+  <!-- <script src="tickets/ticket14.js"></script>
+  <script src="tickets/ticket15.js"></script> -->
+  <script src="quiz.nomodule.js"></script>
+</body>
+</html>
+
+
